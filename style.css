@@ -368,9 +368,18 @@ nav a:hover::after {
     box-shadow: 0 2px 12px rgba(123,140,255,0.08);
   }
   .feature-image {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 6px auto;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 60px !important;
+    height: 60px !important;
+    margin: 0 auto 6px auto !important;
+  }
+  .feature-image img {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
   }
   .feature-text {
     padding: 0 4px;
