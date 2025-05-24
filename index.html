@@ -13,7 +13,7 @@
       <img src="img/logo.png" alt="Calory Logo" style="height:28px;vertical-align:middle;margin-right:10px;">
       <span style="font-weight:bold;font-size:1.5rem;letter-spacing:1px;vertical-align:middle;">CALORY</span>
     </div>
-    <nav>
+    <nav id="main-nav">
       <a href="#">About <span style="font-size:10px;">▼</span></a>
       <a href="#">Features</a>
       <a href="#">Screens</a>
@@ -21,6 +21,9 @@
     <div class="header-icons">
       <img src="img/applelogo.png" alt="Apple Store" style="width:36px; height:36px;">
       <img src="img/chplaylogo.png" alt="Google Play" style="width:36px; height:36px;">
+    </div>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Open menu" tabindex="0">
+      <span></span><span></span><span></span>
     </div>
   </header>
   <section class="main-section">
@@ -79,5 +82,13 @@
       </div>
     </div>
   </section>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('main-nav');
+    menuToggle.addEventListener('click', function() {
+      nav.classList.toggle('show');
+      menuToggle.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
